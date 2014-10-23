@@ -1,0 +1,24 @@
+from unittest import TestCase
+from mockito import *
+from Departamento import *
+from Empleado import *
+
+__author__ = 'Luzu'
+
+
+class TestDepartamento(TestCase):
+    def test_get_salario_total(self):
+
+        dep = Departamento('dep1',1)
+        emp1 = mock(Empleado)
+        emp2 = mock(Empleado)
+        emp3 = mock(Empleado)
+        when(emp1).get_salario().thenReturn(1000)
+        when(emp2).get_salario().thenReturn(2000)
+        when(emp3).get_salario().thenReturn(3000)
+
+        dep.aniadir_empleado(emp1)
+        dep.aniadir_empleado(emp2)
+        dep.aniadir_empleado(emp3)
+
+        self.assertEqual(dep.get_salario_total(),6000)
