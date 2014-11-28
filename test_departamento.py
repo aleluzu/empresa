@@ -8,6 +8,12 @@ __author__ = 'Luzu'
 
 class TestDepartamento(TestCase):
     def test_get_salario_total(self):
+        """Test unitario get salario total
+
+        Test que comprueba el funcionamiento del metodo "get_salario_total" de la clase Departamento.
+
+        :return:
+        """
         dep = Departamento('dep1', 1)
         emp1 = mock(Empleado)
         emp2 = mock(Empleado)
@@ -24,6 +30,12 @@ class TestDepartamento(TestCase):
 
 
     def test_get_salario_total_mensual(self):
+        """Test unitario get salario total mensual
+
+        Test que comprueba el funcionamiento del metodo "get_salario_total_mensual" de la clase Departamento.
+
+        :return:
+        """
         dep = Departamento('dep1', 1)
         emp1 = mock(Empleado)
         emp2 = mock(Empleado)
