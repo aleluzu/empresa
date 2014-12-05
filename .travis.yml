@@ -4,17 +4,26 @@ python:
 # command to install dependencies
 install:
     - pip install pytest pytest-cov
-    - pip install pytest-pep8
+    - pip install pep8
     - pip install coveralls
     - pip install mockito
     - pip install radon
 # command to run tests
 script:
     - py.test --cov . --cov-report term-missing
-    - py.test -k 'not doc' --pep8
+    - pep8 --first Departamento.py
+    - pep8 --first Empleado.py
+    - pep8 --first Empresa.py
+    - pep8 --first test_departamento.py
+    - pep8 --count Departamento.py
+    - pep8 --count Empleado.py
+    - pep8 --count Empresa.py
+    - pep8 --count test_departamento.py
+
     - radon cc -e "doc" ../empresa
     - radon mi -e "doc" ../empresa
     - radon raw -e "doc" ../empresa
+
 after_success:
     - coveralls
 
