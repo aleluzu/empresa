@@ -4,10 +4,23 @@ python:
 # command to install dependencies
 install:
     - pip install pytest pytest-cov
+    - pip install pytest-pep8
     - pip install coveralls
     - pip install mockito
+    - pip install radon
 # command to run tests
 script:
     - py.test --cov . --cov-report term-missing
+    - py.test --pep8
 after_success:
     - coveralls
+
+# email
+notifications:
+  email:
+    recipients:
+        - ale_luzu_15@hotmail.com
+    on_success: [always|never|change] # default: never
+    on_failure: [always|never|change] # default: always
+
+
