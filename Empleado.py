@@ -1,7 +1,8 @@
 __author__ = 'Luzu'
 
+
 class Empleado:
-    def __init__(self,nombre,apellidos,dni,direccion,edad,email,salario):
+    def __init__(self, nombre, apellidos, dni, direccion, edad, email, salario):
         """Constructor
 
         Metodo constructor de la clase Empleado.
@@ -15,13 +16,13 @@ class Empleado:
         :param salario:
         :return:
         """
-        self.__nombre=nombre
-        self.__apellidos=apellidos
-        self.__dni=dni
-        self.__direccion=direccion
-        self.__edad=edad
-        self.__email=email
-        self.__salario=salario
+        self.__nombre = nombre
+        self.__apellidos = apellidos
+        self.__dni = dni
+        self.__direccion = direccion
+        self.__edad = edad
+        self.__email = email
+        self.__salario = salario
 
 
     def get_salario(self):
@@ -85,5 +86,5 @@ class Empleado:
 
         :return: salario mensual
         """
-        return self.__salario/12
+        return self.__salario / 12
 

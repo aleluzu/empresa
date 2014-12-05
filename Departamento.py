@@ -1,7 +1,8 @@
 __author__ = 'Luzu'
 
+
 class Departamento:
-    def __init__(self,nombre_depto,id_depto):
+    def __init__(self, nombre_depto, id_depto):
         """Constructor
 
         Metodo constructor de la clase Departamento.
@@ -10,12 +11,12 @@ class Departamento:
         :param id_depto:
         :return:
         """
-        self.__nombre_depto=nombre_depto
-        self.__id_depto=id_depto
-        self.__empleados= []
+        self.__nombre_depto = nombre_depto
+        self.__id_depto = id_depto
+        self.__empleados = []
 
 
-    def aniadir_empleado(self,empleado):
+    def aniadir_empleado(self, empleado):
         """Anadir empleado
 
         Metodo que anade un empleado a la lista de empleados.
@@ -32,7 +33,7 @@ class Departamento:
 
         :return: salario total
         """
-        salario_total=0
+        salario_total = 0
         for i in self.__empleados:
             salario_total = salario_total + i.get_salario()
         return salario_total
@@ -53,7 +54,7 @@ class Departamento:
 
         :return: salario total mensual
         """
-        salario_total_mensual=0
+        salario_total_mensual = 0
         for i in self.__empleados:
             salario_total_mensual = salario_total_mensual + i.get_salario_mensual()
         return salario_total_mensual
