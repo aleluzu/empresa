@@ -2,7 +2,8 @@ __author__ = 'Luzu'
 
 
 class Empleado:
-    def __init__(self, nombre, apellidos, dni, direccion, edad, email, salario):
+    def __init__(self, nombre, apellidos, dni,
+                 direccion, edad, email, salario):
         """Constructor
 
         Metodo constructor de la clase Empleado.
