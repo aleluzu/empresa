@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from unittest import TestCase
 
 from mockito import *
@@ -13,7 +17,8 @@ class TestDepartamento(TestCase):
     def test_get_salario_total(self):
         """Test unitario get salario total
 
-        Test que comprueba el funcionamiento del metodo "get_salario_total" de la clase Departamento.
+        Test que comprueba el funcionamiento del metodo
+        "get_salario_total" de la clase Departamento.
 
         :return:
         """
@@ -31,11 +36,11 @@ class TestDepartamento(TestCase):
 
         self.assertEqual(dep.get_salario_total(), 6000)
 
-
     def test_get_salario_total_mensual(self):
         """Test unitario get salario total mensual
 
-        Test que comprueba el funcionamiento del metodo "get_salario_total_mensual" de la clase Departamento.
+        Test que comprueba el funcionamiento del metodo
+        "get_salario_total_mensual" de la clase Departamento.
 
         :return:
         """

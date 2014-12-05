@@ -28,7 +28,8 @@ class Departamento:
     def get_salario_total(self):
         """Get salario total
 
-        Metodo que calcula el salario total de todos los empleados de la lista de empleados.
+        Metodo que calcula el salario total de
+        todos los empleados de la lista de empleados.
 
         :return: salario total
         """
@@ -49,11 +50,13 @@ class Departamento:
     def get_salario_total_mensual(self):
         """Get salario total mensual
 
-        Metodo que devuelve el salario total mensual de todos los empleados de la lista de empleados.
+        Metodo que devuelve el salario total mensual de
+        todos los empleados de la lista de empleados.
 
         :return: salario total mensual
         """
         salario_total_mensual = 0
         for i in self.__empleados:
-            salario_total_mensual = salario_total_mensual + i.get_salario_mensual()
+            salario_total_mensual = salario_total_mensual + \
+                                    i.get_salario_mensual()
         return salario_total_mensual
