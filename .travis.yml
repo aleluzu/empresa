@@ -12,9 +12,9 @@ install:
 script:
     - py.test --cov . --cov-report term-missing
     - py.test -k 'not doc' --pep8
-    - radon cc -e "doc"
-    - radon mi -e "doc"
-    - radon raw -e "doc"
+    - radon cc -e "doc" empresa
+    - radon mi -e "doc" empresa
+    - radon raw -e "doc" empresa
 after_success:
     - coveralls
 
