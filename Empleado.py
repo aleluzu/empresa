@@ -24,7 +24,6 @@ class Empleado:
         self.__email = email
         self.__salario = salario
 
-
     def get_salario(self):
         """Get salario
 
@@ -87,4 +86,3 @@ class Empleado:
         :return: salario mensual
         """
         return self.__salario / 12
-

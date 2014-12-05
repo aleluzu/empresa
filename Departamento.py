@@ -15,7 +15,6 @@ class Departamento:
         self.__id_depto = id_depto
         self.__empleados = []
 
-
     def aniadir_empleado(self, empleado):
         """Anadir empleado
 
