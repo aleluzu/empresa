@@ -11,9 +11,11 @@ install:
 # command to run tests
 script:
     - py.test --cov . --cov-report term-missing
+
+
+after_success:
     - pep8 --first src
     - pep8 --first tests
-
     - pep8 --count src
     - pep8 --count tests
 
@@ -21,11 +23,9 @@ script:
     - radon cc src
     - radon mi src
     - radon raw src
-     - radon cc tests
+    - radon cc tests
     - radon mi tests
     - radon raw tests
-
-after_success:
     - coveralls
 
 # email
@@ -33,7 +33,6 @@ notifications:
   email:
     recipients:
         - ale_luzu_15@hotmail.com
-    on_success: [always|never|change] # default: never
-    on_failure: [always|never|change] # default: always
+    on_failure: always
 
 

@@ -1,5 +1,5 @@
 Clase test_departamento
 ===================================
 
-.. autoclass:: test_departamento.TestDepartamento
-:members:
+.. autoclass:: tests.test_departamento.TestDepartamento
+    :members:

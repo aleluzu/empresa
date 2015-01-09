@@ -1,5 +1,5 @@
 Clase Empleado
 ===================================
 
-.. autoclass:: Empleado.Empleado
-   :members:
+.. autoclass:: src.Empleado.Empleado
+    :members:

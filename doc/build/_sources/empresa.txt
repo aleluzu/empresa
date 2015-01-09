@@ -1,5 +1,5 @@
 Clase Empresa
 ===================================
 
-.. autoclass:: Empresa.Empresa
-   :members:
+.. autoclass:: src.Empresa.Empresa
+    :members:

@@ -1,5 +1,5 @@
 Clase Departamento
 ===================================
 
-.. autoclass:: Departamento.Departamento
-:members:
+.. autoclass:: src.Departamento.Departamento
+    :members:
